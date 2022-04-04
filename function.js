@@ -1,10 +1,12 @@
-function suma (val1, val2){
-  return val1 + val2;
+function Coche (){
+  cantPuertas = 0;
+  addPuerta(num){
+    cantPuertas = cantPuertas + num;
+  }
 }
 
-
 function main (){
-  
-  suma(30,8);
-
+  var miCoche = new Coche;
+  miCoche.addPuerta(1);
+  console.log(miCoche.cantPuertas);
 }
